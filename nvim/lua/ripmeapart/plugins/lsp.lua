@@ -2,7 +2,7 @@ return {
   {
     "neovim/nvim-lspconfig",
     dependencies = {
-      { "j-hui/fidget.nvim", opts = {} },
+      { "j-hui/fidget.nvim",  opts = {} },
       { "folke/lazydev.nvim", ft = "lua", opts = {} },
     },
     config = function()
@@ -61,9 +61,6 @@ return {
 
       -- tailwind
       lspconf.tailwindcss.setup({})
-
-      -- eslint
-      lspconf.eslint.setup({})
 
       -- LSP Config
       vim.api.nvim_create_autocmd("LspAttach", {
